@@ -8,6 +8,20 @@ const recommendedGames = [
         description: "Create spunky beats!"
     },
     {
+        href: "../sprunki-phase-3/",
+        imgSrc: "../img/sprunki-phase-3.jpg",
+        alt: "Sprunki Phase 3",
+        title: "Sprunki Phase 3",
+        description: "Discover the new Sprunki Phase 3!"
+    },
+    {
+        href: "../sprunki-phase-4/",
+        imgSrc: "../img/sprunki-phase-4.jpg",
+        alt: "Sprunki Phase 4",
+        title: "Sprunki Phase 4",
+        description: "Discover the new Sprunki Phase 4!"
+    },
+    {
         href: "../neesterversal-v3-incredibox/",
         imgSrc: "../img/neesterversal.png",
         alt: "Neesterversal v3 Incredibox",
