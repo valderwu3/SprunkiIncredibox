@@ -1,6 +1,13 @@
 // 推荐游戏数据
 const recommendedGames = [
     {
+        href: "../flappy-bird/",
+        imgSrc: "../img/flappy-bird.png",
+        alt: "Flappy Bird",
+        title: "Flappy Bird",
+        description: "One-tap challenge!"
+    },
+    {
         href: "../",
         imgSrc: "../img/sprunki.png",
         alt: "Sprunki Incredibox",
