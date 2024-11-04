@@ -90,7 +90,7 @@ const recommendedGames = [
 function renderRecommendedGames() {
     const container = document.getElementById('recommended-games-container');
     if (!container) {
-        console.error('推荐游戏容器未找到');
+        console.error('Recommended games container not found');
         return;
     }
 
@@ -110,9 +110,8 @@ function renderRecommendedGames() {
 
     container.innerHTML = html;
 }
-
-// 当DOM加载完成时执行渲染
+// When the DOM is loaded, execute the rendering
 document.addEventListener('DOMContentLoaded', renderRecommendedGames);
 
-// 导出函数以便在其他地方使用
+// Export the function for use elsewhere
 export { renderRecommendedGames };
