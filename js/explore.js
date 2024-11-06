@@ -29,6 +29,13 @@ const recommendedGames = [
         description: "Discover the new Sprunki Phase 4!"
     },
     {
+        href: "../sprunki-phase-5/",
+        imgSrc: "../img/sprunki-phase-5.jpg",
+        alt: "Sprunki Phase 5",
+        title: "Sprunki Phase 5",
+        description: "Discover the new Sprunki Phase 5!"
+    },
+    {
         href: "../neesterversal-v3-incredibox/",
         imgSrc: "../img/neesterversal.png",
         alt: "Neesterversal v3 Incredibox",
