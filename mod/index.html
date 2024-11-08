@@ -269,6 +269,11 @@
             </ul>
         </div>
     </footer>
+    
+    <script type="module">
+        import { renderRecommendedGames ,renderHeader} from '../js/explore.js';
+        document.addEventListener('DOMContentLoaded', renderHeader);
+    </script>
 
     <script type="module">
         import { enterFullscreen, exitFullscreen, handleFullscreenChange, autoEnterFullscreen } from '../fullscreen.js';

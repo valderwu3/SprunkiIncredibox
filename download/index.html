@@ -139,6 +139,10 @@
         </div>
     </footer>
 
+    <script type="module">
+        import { renderRecommendedGames ,renderHeader} from '../js/explore.js';
+        document.addEventListener('DOMContentLoaded', renderHeader);
+    </script>
     <script>
         const burger = document.querySelector('.burger');
         const mobileNav = document.querySelector('.mobile-nav');

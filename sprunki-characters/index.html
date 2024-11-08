@@ -399,25 +399,9 @@
         </div>
     </footer>
 
-    <script>
-        const burger = document.querySelector('.burger');
-        const mobileNav = document.querySelector('.mobile-nav');
-        const body = document.body;
-
-        burger.addEventListener('click', () => {
-            mobileNav.classList.toggle('-translate-x-full');
-            body.classList.toggle('overflow-hidden');
-            burger.classList.toggle('active');
-        });
-
-        burger.addEventListener('click', () => {
-            burger.classList.toggle('active');
-            burger.children[0].classList.toggle('rotate-45');
-            burger.children[0].classList.toggle('translate-y-1.5');
-            burger.children[1].classList.toggle('opacity-0');
-            burger.children[2].classList.toggle('-rotate-45');
-            burger.children[2].classList.toggle('-translate-y-1.5');
-        });
+    <script type="module">
+        import { renderRecommendedGames ,renderHeader} from '../js/explore.js';
+        document.addEventListener('DOMContentLoaded', renderHeader);
     </script>
 </body>
 </html>

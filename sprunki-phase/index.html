@@ -390,44 +390,12 @@
             </ul>
         </div>
     </footer>
-
     <script type="module">
-        import { enterFullscreen, exitFullscreen, handleFullscreenChange, autoEnterFullscreen } from '../fullscreen.js';
-
-        const gameContainer = document.getElementById('game-container');
-        const gameIframe = document.getElementById('game-iframe');
-        const fullscreenBtn = document.getElementById('fullscreen-btn');
-        const exitFullscreenBtn = document.getElementById('exit-fullscreen-btn');
-        const domainWatermark = document.getElementById('domain-watermark');
-
-        fullscreenBtn.addEventListener('click', () => enterFullscreen(gameContainer, gameIframe, fullscreenBtn, exitFullscreenBtn, domainWatermark));
-        exitFullscreenBtn.addEventListener('click', () => exitFullscreen(gameContainer, gameIframe, fullscreenBtn, exitFullscreenBtn, domainWatermark));
-        document.addEventListener('fullscreenchange', () => handleFullscreenChange(gameContainer, gameIframe, fullscreenBtn, exitFullscreenBtn, domainWatermark));
-
-        // Auto enter fullscreen on mobile devices in portrait mode
-        window.addEventListener('load', () => autoEnterFullscreen(gameContainer, gameIframe, fullscreenBtn, exitFullscreenBtn, domainWatermark));
-        window.addEventListener('resize', () => autoEnterFullscreen(gameContainer, gameIframe, fullscreenBtn, exitFullscreenBtn, domainWatermark));
-        // Hamburger button functionality
-        const burger = document.querySelector('.burger');
-        const mobileNav = document.querySelector('.mobile-nav');
-        const body = document.body;
-
-        burger.addEventListener('click', () => {
-            mobileNav.classList.toggle('-translate-x-full');
-            body.classList.toggle('overflow-hidden');
-            burger.classList.toggle('active');
-        });
-
-        // Hamburger button animation
-        burger.addEventListener('click', () => {
-            burger.classList.toggle('active');
-            burger.children[0].classList.toggle('rotate-45');
-            burger.children[0].classList.toggle('translate-y-1.5');
-            burger.children[1].classList.toggle('opacity-0');
-            burger.children[2].classList.toggle('-rotate-45');
-            burger.children[2].classList.toggle('-translate-y-1.5');
-        });
+        import { renderRecommendedGames ,renderHeader} from '../js/explore.js';
+        document.addEventListener('DOMContentLoaded', renderHeader);
     </script>
+
+    
 </body>
 
 </html>
