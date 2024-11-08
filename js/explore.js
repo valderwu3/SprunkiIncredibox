@@ -8,6 +8,13 @@ const recommendedGames = [
         description: "Experience the new retake!"
     },
     {
+        href: "../incredibox-mustard/",
+        imgSrc: "../img/incredibox-mustard.png",
+        alt: "Incredibox Mustard",
+        title: "Incredibox Mustard",
+        description: "Create mustard beats!"
+    },
+    {
         href: "../",
         imgSrc: "../img/sprunki.png",
         alt: "Sprunki Incredibox",
