@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredibox Sprunki Retake - Play Sprunki Retake on Sprunki Incredibox</title>
+    <meta name="description" content="Discover Sprunki Retake online, the innovative game for creating music. Elevate your music-making experience on Sprunki Incredibox for free!">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://s.sprunkiincredibox.com/img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://s.sprunkiincredibox.com/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://s.sprunkiincredibox.com/img/icon/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="canonical" href="https://sprunkiincredibox.com/sprunki-retake/" />
+    <script src="../tailwind.js"></script>
+    <link rel="stylesheet" href="../tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1522458956946675"
+        crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#FF0000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Sprunki Incredibox">
+</head>
+
+<body class="bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 font-sans leading-relaxed">
+    <header class="bg-gradient-to-r from-red-800 to-red-900 text-white py-4 fixed top-0 left-0 w-full z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center">
+                <div class="logo">
+                    <a href="../" class="flex items-center text-xl font-bold">
+                        <i class="fas fa-music mr-2 hidden sm:block"></i> Sprunki Incredibox</a>
+                </div>
+                <ul class="nav-links hidden md:flex space-x-6">
+                    <li><a href="#play-now" class="hover:text-yellow-400 transition duration-300"><i
+                                class="fas fa-play mr-1"></i> Play Sprunki</a></li>
+                    <li><a href="../mod/" class="hover:text-yellow-400 transition duration-300"><i
+                                class="fas fa-play mr-1"></i> Mod</a></li>
+                    <li><a href="../download/" class="hover:text-yellow-400 transition duration-300"><i
+                                class="fas fa-download mr-1"></i> Download</a></li>
+                    <li><a href="../sprunki-characters/" class="hover:text-yellow-400 transition duration-300"
+                            title="Sprunki Characters"><i class="fas fa-users mr-1"></i> Characters</a></li>
+                </ul>
+                <div class="burger md:hidden cursor-pointer">
+                    <div class="line1 bg-white h-0.5 w-6 my-1 transition duration-300"></div>
+                    <div class="line2 bg-white h-0.5 w-6 my-1 transition duration-300"></div>
+                    <div class="line3 bg-white h-0.5 w-6 my-1 transition duration-300"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div
+        class="mobile-nav fixed top-0 left-0 w-full h-screen bg-red-900 z-40 transform -translate-x-full transition duration-300 ease-in-out">
+        <ul class="flex flex-col items-center justify-center h-full space-y-8 text-white text-2xl">
+            <li><a href="#play-now" class="hover:text-yellow-400 transition duration-300"><i
+                        class="fas fa-play mr-2"></i> Play Sprunki</a></li>
+            <li><a href="../download/" class="hover:text-yellow-400 transition duration-300"><i
+                        class="fas fa-download mr-2"></i> Download</a></li>
+            <li><a href="../mod/" class="hover:text-yellow-400 transition duration-300"><i class="fas fa-play mr-2"></i>
+                    Mod</a></li>
+            <li><a href="../sprunki-characters/" class="hover:text-yellow-400 transition duration-300"><i
+                        class="fas fa-users mr-2"></i> Characters</a></li>
+        </ul>
+    </div>
+
+    <main class="pt-16">
+        <!-- Main Game Section with iframe -->
+        <section id="play-now" class="bg-white py-8">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <!-- Game Container -->
+                    <div class="lg:w-2/3">
+                        <h1 class="text-4xl font-bold text-center mb-4 text-red-800">Free Sprunki Retake Online, Play Sprunki Retake Incredibox</h1>
+                        <div class="game-container relative w-full max-w-4xl mx-auto">
+                            <iframe id="game-iframe" src="https://sprunki.org/sprunki-retake.embed"
+                                frameborder="0" class="w-full h-[600px] rounded-lg shadow-2xl"></iframe>
+                            <button id="fullscreen-btn"
+                                class="absolute bottom-4 right-4 bg-black bg-opacity-60 text-white border-none py-2 px-4 rounded cursor-pointer text-sm transition duration-300 hover:bg-opacity-80 flex items-center">
+                                <i class="fas fa-expand mr-2"></i> Fullscreen
+                            </button>
+                            <button id="exit-fullscreen-btn"
+                                class="fixed top-4 right-4 bg-black bg-opacity-60 text-white border-none py-2 px-4 rounded cursor-pointer text-sm z-50 hidden">
+                                <i class="fas fa-compress mr-2"></i> Exit
+                            </button>
+                            <a href="https://sprunkiincredibox.com/" id="domain-watermark"
+                                class="absolute top-1/2 right-0 transform rotate-90 translate-y-[-50%] text-white hidden">SprunkiIncredibox.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Explore More Section -->
+                    <div class="lg:w-1/3">
+                        <h2 class="text-4xl font-bold text-center mb-14 text-red-800">Explore More</h2>
+                        <div id="recommended-games-container" class="grid grid-cols-2 gap-4"></div>
+                        <!-- JavaScript will populate this container -->
+                    </div>
+                    <script type="module">
+                        import { renderRecommendedGames ,renderHeader} from '../js/explore.js';
+                        document.addEventListener('DOMContentLoaded', renderRecommendedGames);
+                        document.addEventListener('DOMContentLoaded', renderHeader);
+                    </script>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="introduction bg-white py-16" id="about">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-red-800">What is Incredibox Sprunki Retake?</h2>
+                <p class="text-xl text-center mb-10 text-gray-600 max-w-3xl mx-auto">
+                    Incredibox Sprunki Retake represents a dynamic leap in music creation technology, delivering an unparalleled experience for both casual creators and professional producers. With a unique combination of intuitive tools and diverse features, Sprunki Retake game transforms the way users engage with music, offering a fresh approach to beat creation and remixing. This page delves into its unique features, why it's essential for music enthusiasts, and how it reshapes modern soundscaping.
+                </p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features bg-gradient-to-b from-gray-200 to-white py-16" id="features">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-red-800">Key Features of Sprunki Retake Mod</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Drag-and-Drop Simplicity</h3>
+                        <p class="text-gray-600">Effortlessly blend beats, loops, and melodies by dragging elements directly onto the interface.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Real-Time Modifications</h3>
+                        <p class="text-gray-600">Instantly fine-tune your creations with precise controls, providing flexibility to modify sounds without disrupting the workflow.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">User-Friendly Interface</h3>
+                        <p class="text-gray-600">Navigate effortlessly through the platform and start creating music without any steep learning curve.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Dynamic Sound Packs</h3>
+                        <p class="text-gray-600">Explore a variety of sound packs that cater to different genres and styles, ensuring your music is always fresh and exciting.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Interactive Characters</h3>
+                        <p class="text-gray-600">Each character brings a unique sound to your compositions, making it easy to build complex tracks while having fun.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Play Section -->
+        <section class="how-to-play bg-white py-16" id="how-to">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-red-800">How to Get Started with Incredibox Sprunki Retake</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Access the Platform</h3>
+                        <p class="text-gray-700">Visit the Sprunki Retake website from any device with an internet connection. The platform is fully accessible on desktops, tablets, and smartphones, allowing you to create music anytime, anywhere.</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Experiment with Sounds</h3>
+                        <p class="text-gray-700">Begin by exploring the different characters and sound packs available. Layer sounds and experiment with various combinations to create unique tracks that reflect your style.</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Layer and Adjust Sounds</h3>
+                        <p class="text-gray-700">Add layers by dragging more elements into your track. Use the intuitive controls to tweak volume, tempo, and pitch for each layer to craft a cohesive and dynamic composition.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section class="tips bg-gradient-to-b from-white to-gray-100 py-16" id="tips">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-red-800">Tips for Sprunki Retake Incredibox Success</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Start Simple</h3>
+                        <p class="text-gray-600">When you're new, it's tempting to add multiple layers at once. Begin with a solid foundation—a catchy beat or melody—then gradually add effects or other layers.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Explore Presets</h3>
+                        <p class="text-gray-600">Sprunki Retake mod offers numerous presets tailored to different genres. Experimenting with these can give you fresh ideas and inspiration.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Balance Your Layers</h3>
+                        <p class="text-gray-600">Mixing too many layers can result in a muddy sound. Focus on blending elements harmoniously for a cleaner, professional track.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Use Community Feedback</h3>
+                        <p class="text-gray-600">Take advantage of the Sprunki community forums to share your tracks and get constructive feedback. Other users' perspectives can enhance your creations and help refine your skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq bg-white py-16" id="faq">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-red-800">Frequently Asked Questions About Incredibox Sprunki Retake</h2>
+                <div class="space-y-8 max-w-4xl mx-auto">
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">What is Sprunki Retake Incredibox?</h3>
+                        <p class="text-gray-700">Sprunki Retake Incredibox is a dynamic online music creation tool that blends intuitive editing features with a robust library of sounds, loops, and effects. It is designed for both beginners and experienced creators, offering tools to compose, layer, and modify music effortlessly.</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Is Incredibox Sprunki Retake free to use?</h3>
+                        <p class="text-gray-700">Yes, Sprunki Retake is completely free to use with no hidden fees or premium versions. All features, including its vast library of sounds and interactive tools, are accessible to everyone, making it an inclusive platform for music creators of all levels.</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">What devices support Sprunki Retake Incredibox?</h3>
+                        <p class="text-gray-700">Sprunki Retake Incredibox is browser-based and compatible with any modern device, including desktop computers, tablets, and smartphones. Users only need an internet connection and a web browser to access it.</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Can I collaborate with others on Incredibox Sprunki Retake?</h3>
+                        <p class="text-gray-700">Sprunki Retake does not allow users to save projects directly. However, you can record your mix and share it with others via social media or other platforms, making collaboration possible through sharing and feedback on your recorded compositions.</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Is Sprunki Retake Incredibox suitable for beginners?</h3>
+                        <p class="text-gray-700">Absolutely! Sprunki Retake Incredibox features a simple drag-and-drop interface, making it accessible for beginners. A friendly interface ensures even those new to music creation can produce quality tracks quickly.</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">How can I save my tracks in Sprunki Retake game?</h3>
+                        <p class="text-gray-700">Sprunki Retake does not currently support saving tracks directly on the platform. However, users can record their mixes using external tools, allowing them to capture and share their creations as audio or video files.</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Are there any tutorials available?</h3>
+                        <p class="text-gray-700">Currently, there are no official tutorials for Sprunki Retake. However, you can explore various community-created guides and instructional videos shared on platforms like YouTube to learn techniques and tips from other experienced users.</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">What makes Sprunki Retake Incredibox different from other music tools?</h3>
+                        <p class="text-gray-700">Sprunki Retake Incredibox stands out due to its character-based sound interactions, intuitive real-time editing, and broad customization options. Its focus on visual and engaging interfaces adds a playful element to music-making, unlike traditional tools.</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Can I share my tracks in Sprunki Retake game with others?</h3>
+                        <p class="text-gray-700">Yes, while direct sharing within the tool is limited. Users can still preserve their work by recording their tracks using external tools, allowing for sharing and offline playback of their creative compositions.</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Does Sprunki Retake mod have a mobile app?</h3>
+                        <p class="text-gray-700">Currently, Sprunki Retake mod is optimized for web browsers and doesn't have a dedicated mobile app. However, it works seamlessly on mobile browsers, allowing users to create music on the go.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ready to Play Section -->
+        <section class="ready-to-play bg-gradient-to-r from-red-800 to-red-900 text-white py-20" id="ready-to-play">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-5xl font-bold mb-6">Start Your Musical Journey with Incredibox Sprunki Retake Today!</h2>
+                <p class="text-xl mb-10 max-w-2xl mx-auto">
+                    Incredibox Sprunki Retake redefines music creation, blending intuitive usability with professional-grade features. Dive in and experience the future of sound design, collaboration, and music-making. Whether you're remixing classic beats, creating entirely new tracks, or learning the basics of music theory, Sprunki Retake Incredibox empowers your creativity.
+                </p>
+                <p class="text-xl mb-10 max-w-2xl mx-auto">
+                    Don't miss out on the opportunity to explore your musical potential with Sprunki Retake play. Join today and experience the joy of creating, sharing, and enjoying music in a fun and engaging way!
+                </p>
+                <a href="#play-now" class="bg-yellow-400 text-red-900 font-bold text-xl py-4 px-10 rounded-full hover:bg-yellow-300 transition duration-300 inline-block hover:shadow-lg transform hover:-translate-y-1">
+                    Get Started with Sprunki Retake Now!
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <p class="text-center">&copy; 2024 SprunkiIncredibox.com. All rights reserved.</p>
+        </div>
+        <div class="container mx-auto px-4 mt-4">
+            <p class="text-center"><a href="https://github.com/qiayue/SprunkiIncredibox" class="text-white hover:text-yellow-400 transition duration-300">Sprunki Incredibox Github</a></p>
+        </div>
+        <div class="language-selector mt-8">
+            <p class="text-center mb-4">Choose your language:</p>
+            <ul class="flex justify-center space-x-4">
+                <li><a href="../" hreflang="en" class="text-white hover:text-yellow-400 transition duration-300">English</a></li>
+                <li><a href="../ko/" hreflang="ko" class="text-white hover:text-yellow-400 transition duration-300">한국어</a></li>
+                <li><a href="../ru/" hreflang="ru" class="text-white hover:text-yellow-400 transition duration-300">Русский</a></li>
+                <li><a href="../pt/" hreflang="pt" class="text-white hover:text-yellow-400 transition duration-300">Português</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="module">
+        import { enterFullscreen, exitFullscreen, handleFullscreenChange, autoEnterFullscreen } from '../fullscreen.js';
+
+        const fullscreenBtn = document.getElementById('fullscreen-btn');
+        const exitFullscreenBtn = document.getElementById('exit-fullscreen-btn');
+        const gameIframe = document.getElementById('game-iframe');
+        const gameContainer = document.querySelector('.game-container');
+        const domainWatermark = document.getElementById('domain-watermark');
+
+        fullscreenBtn.addEventListener('click', () => {
+            enterFullscreen(gameContainer, gameIframe, fullscreenBtn, exitFullscreenBtn, domainWatermark);
+        });
+
+        exitFullscreenBtn.addEventListener('click', () => {
+            exitFullscreen(gameContainer, gameIframe, fullscreenBtn, exitFullscreenBtn, domainWatermark);
+        });
+
+        document.addEventListener('fullscreenchange', () => {
+            handleFullscreenChange(gameContainer, gameIframe, fullscreenBtn, exitFullscreenBtn, domainWatermark);
+        });
+        document.addEventListener('webkitfullscreenchange', () => {
+            handleFullscreenChange(gameContainer, gameIframe, fullscreenBtn, exitFullscreenBtn, domainWatermark);
+        });
+        document.addEventListener('mozfullscreenchange', () => {
+            handleFullscreenChange(gameContainer, gameIframe, fullscreenBtn, exitFullscreenBtn, domainWatermark);
+        });
+        document.addEventListener('MSFullscreenChange', () => {
+            handleFullscreenChange(gameContainer, gameIframe, fullscreenBtn, exitFullscreenBtn, domainWatermark);
+        });
+
+        window.addEventListener('load', () => {
+            autoEnterFullscreen(gameContainer, gameIframe, fullscreenBtn, exitFullscreenBtn, domainWatermark);
+        });
+
+        const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
+
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('nav-active');
+
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = '';
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                    }
+                });
+
+                burger.classList.toggle('toggle');
+            });
+        }
+
+        navSlide();
+
+        // Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js').then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+    <div style="display:none">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XQY73C38G"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-2XQY73C38G');
+        </script>
+        <script defer data-domain="sprunkiincredibox.com" src="https://click.pageview.click/js/script.js"></script>
+    </div>
+</body>
+
+</html>

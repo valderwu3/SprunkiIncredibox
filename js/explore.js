@@ -1,6 +1,13 @@
 // 推荐游戏数据
 const recommendedGames = [
     {
+        href: "../sprunki-retake/",
+        imgSrc: "../img/sprunki-retake.png",
+        alt: "Sprunki Retake",
+        title: "Sprunki Retake",
+        description: "Experience the new retake!"
+    },
+    {
         href: "../",
         imgSrc: "../img/sprunki.png",
         alt: "Sprunki Incredibox",
@@ -183,7 +190,6 @@ const headerHTML = `
 
 // 渲染头部
 function renderHeader() {
-    console.log(12312312312)
     const headerContainer = document.querySelector('header');
     if (!headerContainer) {
         console.error('头部容器未找到');
