@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredibox Mustard - Play Incredibox Mustard Sprunki on Sprunki Incredibox</title>
+    <meta name="description" content="Discover Incredibox Mustard online, the creative game for generating music. Elevate your musical experience on Sprunki Incredibox!">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://s.sprunkiincredibox.com/img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://s.sprunkiincredibox.com/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://s.sprunkiincredibox.com/img/icon/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="canonical" href="https://sprunkiincredibox.com/incredibox-mustard/" />
+    
+    <!-- Stylesheets -->
+    <script src="../tailwind.js"></script>
+    <link rel="stylesheet" href="../tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1522458956946675"
+        crossorigin="anonymous"></script>
+
+    <!-- Mobile Web App Settings -->
+    <meta name="theme-color" content="#FF0000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Sprunki Incredibox">
+    
+    <!-- Scripts -->
+    <script type="module">
+        import { renderRecommendedGames, renderHeader } from '../js/explore.js';
+        
+        // Initialize game features when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            renderRecommendedGames();
+            renderHeader();
+            initializeGameControls();
+        });
+
+        function initializeGameControls() {
+            const fullscreenBtn = document.getElementById('fullscreen-btn');
+            const exitFullscreenBtn = document.getElementById('exit-fullscreen-btn');
+            const gameIframe = document.getElementById('game-iframe');
+            const gameContainer = document.querySelector('.game-container');
+            const domainWatermark = document.getElementById('domain-watermark');
+            const burger = document.querySelector('.burger');
+            const mobileNav = document.querySelector('.mobile-nav');
+            
+            // Mobile navigation toggle
+            burger?.addEventListener('click', () => {
+                mobileNav.classList.toggle('translate-x-0');
+                burger.classList.toggle('active');
+            });
+
+            // Close mobile nav when clicking links
+            document.querySelectorAll('.mobile-nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileNav.classList.remove('translate-x-0');
+                    burger.classList.remove('active');
+                });
+            });
+
+            // Smooth scroll for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // 全屏按钮点击事件
+            fullscreenBtn?.addEventListener('click', () => {
+                if (gameContainer.requestFullscreen) {
+                    gameContainer.requestFullscreen();
+                } else if (gameContainer.webkitRequestFullscreen) {
+                    gameContainer.webkitRequestFullscreen();
+                } else if (gameContainer.msRequestFullscreen) {
+                    gameContainer.msRequestFullscreen();
+                }
+                fullscreenBtn.classList.add('hidden');
+                exitFullscreenBtn.classList.remove('hidden');
+                domainWatermark.classList.remove('hidden');
+            });
+
+            // 退出全屏按钮点击事件
+            exitFullscreenBtn?.addEventListener('click', () => {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+                exitFullscreenBtn.classList.add('hidden');
+                fullscreenBtn.classList.remove('hidden');
+                domainWatermark.classList.add('hidden');
+            });
+
+            // 监听全屏变化
+            document.addEventListener('fullscreenchange', handleFullscreenChange);
+            document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+            document.addEventListener('mozfullscreenchange', handleFullscreenChange);
+            document.addEventListener('MSFullscreenChange', handleFullscreenChange);
+
+            function handleFullscreenChange() {
+                if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
+                    exitFullscreenBtn.classList.add('hidden');
+                    fullscreenBtn.classList.remove('hidden');
+                    domainWatermark.classList.add('hidden');
+                }
+            }
+        }
+    </script>
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XQY73C38G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2XQY73C38G');
+    </script>
+    <script defer data-domain="sprunkiincredibox.com" src="https://click.pageview.click/js/script.js"></script>
+</head>
+
+<body class="bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 font-sans leading-relaxed">
+    <header class="bg-gradient-to-r from-red-800 to-red-900 text-white py-4 fixed top-0 left-0 w-full z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center">
+                <div class="logo">
+                    <a href="../" class="flex items-center text-xl font-bold">
+                        <i class="fas fa-music mr-2 hidden sm:block"></i> Sprunki Incredibox</a>
+                </div>
+                <ul class="nav-links hidden md:flex space-x-6">
+                    <li><a href="#play-now" class="hover:text-yellow-400 transition duration-300">
+                        <i class="fas fa-play mr-1"></i> Play Now</a></li>
+                    <li><a href="#how-to" class="hover:text-yellow-400 transition duration-300">
+                        <i class="fas fa-question-circle mr-1"></i> How to Play</a></li>
+                    <li><a href="#tips" class="hover:text-yellow-400 transition duration-300">
+                        <i class="fas fa-lightbulb mr-1"></i> Tips</a></li>
+                    <li><a href="#faq" class="hover:text-yellow-400 transition duration-300">
+                        <i class="fas fa-question mr-1"></i> FAQ</a></li>
+                </ul>
+                <div class="burger md:hidden cursor-pointer">
+                    <div class="line1 bg-white h-0.5 w-6 my-1 transition duration-300"></div>
+                    <div class="line2 bg-white h-0.5 w-6 my-1 transition duration-300"></div>
+                    <div class="line3 bg-white h-0.5 w-6 my-1 transition duration-300"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div
+        class="mobile-nav fixed top-0 left-0 w-full h-screen bg-red-900 z-40 transform -translate-x-full transition duration-300 ease-in-out">
+        <ul class="flex flex-col items-center justify-center h-full space-y-8 text-white text-2xl">
+            <li><a href="#play-now" class="hover:text-yellow-400 transition duration-300">
+                <i class="fas fa-play mr-2"></i> Play Now</a></li>
+            <li><a href="#how-to" class="hover:text-yellow-400 transition duration-300">
+                <i class="fas fa-question-circle mr-2"></i> How to Play</a></li>
+            <li><a href="#tips" class="hover:text-yellow-400 transition duration-300">
+                <i class="fas fa-lightbulb mr-2"></i> Tips</a></li>
+            <li><a href="#faq" class="hover:text-yellow-400 transition duration-300">
+                <i class="fas fa-question mr-2"></i> FAQ</a></li>
+        </ul>
+    </div>
+
+    <main class="pt-16">
+        <!-- Main Game Section with iframe -->
+        <section id="play-now" class="bg-white py-8">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <!-- Game Container -->
+                    <div class="lg:w-2/3">
+                        <h1 class="text-4xl font-bold text-center mb-4 text-red-800">Free Incredibox Mustard Online, Play Mustard Incredibox Now</h1>
+                        <div class="game-container relative w-full max-w-4xl mx-auto">
+                            <iframe id="game-iframe" src="https://kdata1.com/2024/10/colorbox-mustard/"
+                                frameborder="0" class="w-full h-[600px] rounded-lg shadow-2xl"></iframe>
+                            <button id="fullscreen-btn"
+                                class="absolute bottom-4 right-4 bg-black bg-opacity-60 text-white border-none py-2 px-4 rounded cursor-pointer text-sm transition duration-300 hover:bg-opacity-80 flex items-center">
+                                <i class="fas fa-expand mr-2"></i> Fullscreen
+                            </button>
+                            <button id="exit-fullscreen-btn"
+                                class="fixed top-4 right-4 bg-black bg-opacity-60 text-white border-none py-2 px-4 rounded cursor-pointer text-sm z-50 hidden">
+                                <i class="fas fa-compress mr-2"></i> Exit
+                            </button>
+                            <a href="https://sprunkiincredibox.com/" id="domain-watermark"
+                                class="absolute top-1/2 right-0 transform rotate-90 translate-y-[-50%] text-white hidden">SprunkiIncredibox.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Explore More Section -->
+                    <div class="lg:w-1/3">
+                        <h2 class="text-4xl font-bold text-center mb-14 text-red-800">Explore More</h2>
+                        <div id="recommended-games-container" class="grid grid-cols-2 gap-4"></div>
+                        <!-- JavaScript will populate this container -->
+                    </div>
+                    <script type="module">
+                        import { renderRecommendedGames ,renderHeader} from '../js/explore.js';
+                        document.addEventListener('DOMContentLoaded', renderRecommendedGames);
+                        document.addEventListener('DOMContentLoaded', renderHeader);
+                    </script>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="introduction bg-white py-16" id="about">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-red-800">Discover the Features of Incredibox Mustard</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Unique Sounds and Characters</h3>
+                        <p class="text-gray-600">One of the standout aspects of Incredibox Mustard mod is its brand-new lineup of beatboxers, each bringing their own unique flair to the game. The Sprunki aesthetic adds a fresh twist, enhancing your music-making journey with eye-catching visuals and innovative sounds. Each character is designed to provide a distinct auditory experience, ensuring that your mixes are as diverse as your imagination.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Effortless Drag-and-Drop Music Creation</h3>
+                        <p class="text-gray-600">Creating your next hit has never been easier! Mustard Incredibox features an intuitive drag-and-drop interface that allows you to mix and match sound loops seamlessly. Simply drag your chosen sounds onto your characters, and watch as your musical vision comes to life. This user-friendly design empowers you to focus on your creativity without getting bogged down by complex mechanics.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Unlock Special Combos and Hidden Bonuses</h3>
+                        <p class="text-gray-600">The thrill of discovery is a core element of Incredibox Mustard Sprunki. As you experiment with different sound combinations, you'll unlock special combos that reveal hidden animations and exclusive tracks. This rewarding aspect of the game encourages you to think outside the box and explore various musical styles, making every session a unique experience.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Share Your Music with the World</h3>
+                        <p class="text-gray-600">With Incredibox Mustard, sharing your creations is just a click away. Record your tracks and showcase them to friends. This feature not only allows you to gain recognition for your unique mixes but also connects you with fellow music lovers who share your passion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Play Section -->
+        <section class="how-to-play bg-gradient-to-b from-gray-200 to-white py-16" id="how-to">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-red-800">How to Play Mustard Incredibox</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Choose Your Sounds</h3>
+                        <p class="text-gray-600">Begin your musical journey by selecting from an extensive library of beats, melodies, effects, and vocal loops. Each sound in Incredibox Mustard Sprunki has been meticulously crafted to provide a seamless musical experience, ensuring that your creations are both polished and professional.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Build Your Band</h3>
+                        <p class="text-gray-600">Once you've chosen your sounds, it's time to build your band! Drag sound loops onto your characters, and watch as each one performs its assigned loop. This interactive approach allows your track to evolve dynamically, creating a rich tapestry of sound that reflects your artistic vision.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Explore Combos</h3>
+                        <p class="text-gray-600">The heart of Incredibox Mustard lies in its ability to surprise. Mix and match different sounds to uncover hidden animations and unique tracks. Each combination you explore could lead to unexpected delights, encouraging you to keep experimenting and discovering new musical possibilities.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Record and Share Your Creations</h3>
+                        <p class="text-gray-600">When you're satisfied with your mix, take the opportunity to record it and share it with the world. The Incredibox Mustard community thrives on creativity, so don't hesitate to showcase your style and gain feedback from fellow enthusiasts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section class="tips bg-gradient-to-b from-white to-gray-100 py-16" id="tips">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-red-800">Tips for Mustard Incredibox Success</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Start Simple</h3>
+                        <p class="text-gray-600">When you're new, it's tempting to add multiple layers at once. Begin with a solid foundation—a catchy beat or melody—then gradually add effects or other layers.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Explore Presets</h3>
+                        <p class="text-gray-600">Mustard Incredibox mod offers numerous presets tailored to different genres. Experimenting with these can give you fresh ideas and inspiration.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Balance Your Layers</h3>
+                        <p class="text-gray-600">Mixing too many layers can result in a muddy sound. Focus on blending elements harmoniously for a cleaner, professional track.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Use Community Feedback</h3>
+                        <p class="text-gray-600">Take advantage of the Mustard community forums to share your tracks and get constructive feedback. Other users' perspectives can enhance your creations and help refine your skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq bg-white py-16" id="faq">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-red-800">Frequently Asked Questions (FAQ) about Incredibox Mustard</h2>
+                <div class="space-y-8 max-w-4xl mx-auto">
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">What is Incredibox Mustard?</h3>
+                        <p class="text-gray-700">Incredibox Mustard is a vibrant music-mixing game that combines creativity and fun. Players can create unique tracks by dragging and dropping sound loops onto animated beatboxers, resulting in an interactive and engaging music-making experience.</p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">What Sets Incredibox Mustard Apart from Other Versions?</h3>
+                        <p class="text-gray-700">Incredibox Mustard Sprunki stands out due to its fresh theme, unique visuals, and innovative sound loops. The quirky Sprunki aesthetic adds a distinctive flavor, making it a must-try for fans of the series and newcomers alike.</p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Is Mustard Incredibox Beginner-Friendly?</h3>
+                        <p class="text-gray-700">Absolutely! Mustard Incredibox is designed to be accessible for all players. With its straightforward drag-and-drop mechanics, anyone can dive into music creation, regardless of their prior experience.</p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Is Incredibox Mustard suitable for all ages?</h3>
+                        <p class="text-gray-700">Yes, Incredibox Mustard is designed for players of all ages. Its intuitive drag-and-drop mechanics make it accessible for beginners, while the depth of sound combinations ensures that even experienced musicians can enjoy creating complex tracks.</p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Can I Share My Creations from Incredibox Mustard?</h3>
+                        <p class="text-gray-700">Yes! You can easily record your tracks and share them with the global Incredibox Mustard community. Show off your musical talent and connect with others who appreciate your work.</p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">What types of sounds are available in Incredibox Mustard?</h3>
+                        <p class="text-gray-700">Incredibox Mustard offers an extensive library of beats, melodies, effects, and vocal loops. Each sound is crafted to enhance your music-making experience, providing a diverse range of options to suit various musical styles and preferences.</p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Are There Hidden Features in Incredibox Mustard?</h3>
+                        <p class="text-gray-700">Yes, exploring different sound combinations can unlock hidden animations and exclusive tracks. The game encourages players to experiment with various combos, rewarding creativity and curiosity with delightful surprises along the way.</p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-2xl shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-700">Can I play Incredibox Mustard offline?</h3>
+                        <p class="text-gray-700">Incredibox Mustard is a web-based game and cannot be downloaded. This means you need an internet connection to access the game and its features. However, once you're online, you can create music anytime, as long as you remain connected to the internet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ready to Play Section -->
+        <section class="ready-to-play bg-gradient-to-r from-red-800 to-red-900 text-white py-20" id="ready-to-play">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-5xl font-bold mb-6">Ready to Create Your Musical Masterpiece on Incredibox Mustard?</h2>
+                <p class="text-xl mb-10 max-w-2xl mx-auto">
+                    The world of Incredibox Mustard is waiting for you! Join the fun and start crafting unique beats today. Let your creativity flow, experiment with sounds, and bring the vibrant Sprunki vibe to life. Whether you're creating for fun or aiming for fame, your next hit is just a mix away!
+                </p>
+                <p class="text-xl mb-10 max-w-2xl mx-auto">
+                    Embrace the adventure and see where your musical journey takes you with Incredibox Mustard!
+                </p>
+                <a href="#play-now" class="bg-yellow-400 text-red-900 font-bold text-xl py-4 px-10 rounded-full hover:bg-yellow-300 transition duration-300 inline-block hover:shadow-lg transform hover:-translate-y-1">
+                    Get Started with Incredibox Mustard Now!
+                </a>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <p class="text-center">&copy; 2024 SprunkiIncredibox.com. All rights reserved.</p>
+        </div>
+        <div class="container mx-auto px-4 mt-4">
+            <p class="text-center"><a href="https://github.com/qiayue/SprunkiIncredibox" class="text-white hover:text-yellow-400 transition duration-300">Sprunki Incredibox Github</a></p>
+        </div>
+        <div class="language-selector mt-8">
+            <p class="text-center mb-4">Choose your language:</p>
+            <ul class="flex justify-center space-x-4">
+                <li><a href="../" hreflang="en" class="text-white hover:text-yellow-400 transition duration-300">English</a></li>
+                <li><a href="../ko/" hreflang="ko" class="text-white hover:text-yellow-400 transition duration-300">한국어</a></li>
+                <li><a href="../ru/" hreflang="ru" class="text-white hover:text-yellow-400 transition duration-300">Русский</a></li>
+                <li><a href="../pt/" hreflang="pt" class="text-white hover:text-yellow-400 transition duration-300">Português</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
