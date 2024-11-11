@@ -2,14 +2,14 @@
 const recommendedGames = [
     {
         href: "../sprunki-retake/",
-        imgSrc: "../img/sprunki-retake.png",
+        imgSrc: "https://spunky.im/img/sprunki-retake.png",
         alt: "Sprunki Retake",
         title: "Sprunki Retake",
         description: "Experience the new retake!"
     },
     {
         href: "https://spunky.im/zombies-sprunki/",
-        imgSrc: "../img/zombies-sprunki.png",
+        imgSrc: "https://spunky.im/img/Zombies-Sprunki.png",
         alt: "Zombies Sprunki",
         title: "Zombies Sprunki ★ 4.7",
         description: "Create spooky Halloween music!"
