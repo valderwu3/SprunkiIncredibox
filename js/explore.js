@@ -43,7 +43,7 @@ const recommendedGames = [
         description: "Original characters!"
     },
     {
-        href: "https://spunky.im/dandys-world/",
+        href: "../dandys-world/",
         imgSrc: "../img/dandys-world.png",
         alt: "Sprunki Dandy's World",
         title: "Dandy's World",
@@ -64,14 +64,14 @@ const recommendedGames = [
         description: "Discover the new Sprunki Phase 4!"
     },
     {
-        href: "https://spunky.im/neesterversal-v3-incredibox/",
+        href: "../neesterversal-v3-incredibox/",
         imgSrc: "../img/neesterversal.png",
         alt: "Neesterversal v3 Incredibox",
         title: "Neesterversal v3",
         description: "20 Unique Neesters!"
     },
     {
-        href: "https://spunky.im/fnf/",
+        href: "../fnf/",
         imgSrc: "../img/sprunki-fnf.jpg",
         alt: "Sprunki fnf",
         title: "Sprunki FNF",
@@ -85,7 +85,7 @@ const recommendedGames = [
         description: "Discover the new Sprunki Phase 3!"
     },
     {
-        href: "https://spunky.im/gray-sprunki/",
+        href: "../gray-sprunki/",
         imgSrc: "../img/gray-sprunki.png",
         alt: "Gray Sprunki Incredibox",
         title: "Gray Sprunki",
