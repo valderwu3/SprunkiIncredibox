@@ -22,7 +22,7 @@ const recommendedGames = [
         description: "Create spunky beats!"
     },
     {
-        href: "../sprunki-mustard/",
+        href: "https://spunky.im/sprunki-mustard/",
         imgSrc: "../img/mustard.webp",
         alt: "Sprunki Mustard",
         title: "Sprunki Mustard",
@@ -43,77 +43,77 @@ const recommendedGames = [
         description: "Original characters!"
     },
     {
-        href: "../dandys-world/",
+        href: "https://spunky.im/dandys-world/",
         imgSrc: "../img/dandys-world.png",
         alt: "Sprunki Dandy's World",
         title: "Dandy's World",
         description: "Creepy yet captivating!"
     },
     {
-        href: "../sprunked/",
+        href: "https://spunky.im/sprunked/",
         imgSrc: "../img/sprunked.jpg",
         alt: "Sprunked",
         title: "Sprunked",
         description: "Explore the unique cast!"
     },
     {
-        href: "../sprunki-phase-4/",
+        href: "https://spunky.im/sprunki-phase-4/",
         imgSrc: "../img/sprunki-phase-4.jpg",
         alt: "Sprunki Phase 4",
         title: "Sprunki Phase 4",
         description: "Discover the new Sprunki Phase 4!"
     },
     {
-        href: "../neesterversal-v3-incredibox/",
+        href: "https://spunky.im/neesterversal-v3-incredibox/",
         imgSrc: "../img/neesterversal.png",
         alt: "Neesterversal v3 Incredibox",
         title: "Neesterversal v3",
         description: "20 Unique Neesters!"
     },
     {
-        href: "../fnf/",
+        href: "https://spunky.im/fnf/",
         imgSrc: "../img/sprunki-fnf.jpg",
         alt: "Sprunki fnf",
         title: "Sprunki FNF",
         description: "Friday Night Funkin'!"
     },
     {
-        href: "../sprunki-phase-3/",
+        href: "https://spunky.im/sprunki-phase-3/",
         imgSrc: "../img/sprunki-phase-3.jpg",
         alt: "Sprunki Phase 3",
         title: "Sprunki Phase 3",
         description: "Discover the new Sprunki Phase 3!"
     },
     {
-        href: "../gray-sprunki/",
+        href: "https://spunky.im/gray-sprunki/",
         imgSrc: "../img/gray-sprunki.png",
         alt: "Gray Sprunki Incredibox",
         title: "Gray Sprunki",
         description: "Cool Cat of Incredibox"
     },
     {
-        href: "../sprunki-phase-5/",
+        href: "https://spunky.im/sprunki-phase-5/",
         imgSrc: "../img/sprunki-phase-5.jpg",
         alt: "Sprunki Phase 5",
         title: "Sprunki Phase 5",
         description: "Discover the new Sprunki Phase 5!"
     },
     {
-        href: "../sprunki-phase-6/",
+        href: "https://spunky.im/sprunki-phase-6/",
         imgSrc: "../img/sprunki-phase-6.png",
         alt: "Sprunki Phase 6",
         title: "Sprunki Phase 6",
         description: "Discover the new Sprunki Phase 6!"
     },
     {
-        href: "../abgerny/",
+        href: "https://spunky.im/abgerny/",
         imgSrc: "../img/sprunki-abgerny.png",
         alt: "Abgerny",
         title: "Abgerny",
         description: "New sounds & characters!"
     },
     {
-        href: "../flappy-bird/",
+        href: "https://spunky.im/flappy-bird/",
         imgSrc: "../img/flappy-bird.png",
         alt: "Flappy Bird",
         title: "Flappy Bird",
