@@ -2,7 +2,7 @@
 const recommendedGames = [
     {
         href: "../sprunki-retake/",
-        imgSrc: "https://spunky.im/img/sprunki-retake.png",
+        imgSrc: "../img/sprunki-retake.png",
         alt: "Sprunki Retake",
         title: "Sprunki Retake",
         description: "Experience the new retake!"
@@ -11,7 +11,7 @@ const recommendedGames = [
         href: "https://spunky.im/zombies-sprunki/",
         imgSrc: "https://spunky.im/img/Zombies-Sprunki.png",
         alt: "Zombies Sprunki",
-        title: "Zombies Sprunki ★ 4.7",
+        title: "Zombies Sprunki",
         description: "Create spooky Halloween music!"
     },
     {
@@ -128,8 +128,17 @@ const recommendedGames = [
     },
 ];
 
-// 渲染推荐游戏
+
+// 添加一个标志来追踪是否已经渲染
+let hasRendered = false;
+
+// 修改渲染推荐游戏函数
 function renderRecommendedGames() {
+    // 如果已经渲染过，直接返回
+    if (hasRendered) {
+        return;
+    }
+
     const container = document.getElementById('recommended-games-container');
     if (!container) {
         console.error('Recommended games container not found');
@@ -137,7 +146,6 @@ function renderRecommendedGames() {
     }
 
     let html = '';
-
     recommendedGames.forEach(game => {
         html += `
             <a href="${game.href}" class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300 hover:shadow-xl hover:-translate-y-1">
@@ -150,7 +158,10 @@ function renderRecommendedGames() {
         `;
     });
 
-    container.innerHTML = html;
+    container.insertAdjacentHTML('beforeend', html);
+    
+    // 设置渲染标志为true
+    hasRendered = true;
 }
 // When the DOM is loaded, execute the rendering
 document.addEventListener('DOMContentLoaded', renderRecommendedGames);
