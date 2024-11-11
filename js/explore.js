@@ -8,6 +8,13 @@ const recommendedGames = [
         description: "Experience the new retake!"
     },
     {
+        href: "https://spunky.im/zombies-sprunki/",
+        imgSrc: "../img/zombies-sprunki.png",
+        alt: "Zombies Sprunki",
+        title: "Zombies Sprunki ★ 4.7",
+        description: "Create spooky Halloween music!"
+    },
+    {
         href: "../incredibox-mustard/",
         imgSrc: "../img/incredibox-mustard.png",
         alt: "Incredibox Mustard",
