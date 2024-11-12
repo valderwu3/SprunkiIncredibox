@@ -1,7 +1,7 @@
 // 推荐游戏数据
 const recommendedGames = [
     {
-        href: "../sprunki-retake/",
+        href: "https://sprunkiretake.app/",
         imgSrc: "../img/sprunki-retake.png",
         alt: "Sprunki Retake",
         title: "Sprunki Retake",
